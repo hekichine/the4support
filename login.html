@@ -71,6 +71,9 @@
         align-items: center;
         overflow: hidden;
       }
+      .bl_right a {
+        transition: 0.3s ease-in-out;
+      }
       .bl_right .bl_right-inner .bl_title {
         font-style: normal;
         font-weight: 700;
@@ -205,6 +208,16 @@
         width: 250px;
         height: 250px;
         transform: translateY(50%);
+      }
+      @media (-moz-touch-enabled: 0), (hover: hover) and (min-width: 1024px) {
+        .bl_right .bl_btn a:hover,
+        .bl_right .bl_save a:hover {
+          background-color: #03b3d1;
+          color: #fff;
+        }
+        .bl_right .bl_content-left .bl_content-btn:hover {
+          opacity: 0.8;
+        }
       }
       @media (max-width: 1600px) {
         .bl_right .bl_right-inner .bl_title {
@@ -442,7 +455,7 @@
               </h2>
             </div>
             <div class="bl_btn flex justify-center">
-              <a href="#"
+              <a href="#" target="_blank"
                 >Learn more
                 <svg
                   width="12"
@@ -467,7 +480,7 @@
               </div>
               <div class="bl_content-inner">
                 <div class="bl_save">
-                  <a href="#"
+                  <a href="#" target="_blank"
                     >Save $114 for<br />
                     6 months</a
                   >
@@ -520,7 +533,10 @@
                       Standard Plan !
                     </h3>
                     <h4>The #1 ranked Shopify Page Builder</h4>
-                    <a href="#" class="bl_content-btn inline-flex"
+                    <a
+                      href="#"
+                      target="_blank"
+                      class="bl_content-btn inline-flex"
                       >Get app for free
                       <svg
                         width="12"
